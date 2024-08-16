@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+
+p {
+    line-height: 1.6;
+    text-indent: 30px;
+
+}
+li{
+    margin-top: 10px;
+    padding-left: 15px;
+    list-style-image: linear-gradient(#fa9483,#fa9483);
+
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+h1 {
+    font-size: 270%;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+
+header {
+    background: #2d4057;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 10px 15px 5px 15px;
+    z-index: 2;
+}
+
+main {
+    min-height: 100vh;
+    padding-top:  80px;
+}
+
+footer {
+    min-height: 80px;
+    background: #2d4057;
+    color: white;
+    text-align: center;
+    padding-top: 35px;
+}
+
+section {
+    padding:0 15%;
+    position: relative;
+    z-index: 1;
+}
+
+
+.logo {
+    height: 50px;
+}
+
+navbar {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    display: inline-block;
+    overflow: auto;
+    z-index: 3;
+}
+
+navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 20px;
+   
+}
+
+navbar a:hover {
+    color: #f3deca;
+    text-decoration: underline 1px;
+}
+#index {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.index-info {
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.index-info h1 {
+    font-size: 500%;
+    color: white;
+    border: 2px solid gray;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #2d405779;
+    padding: 2px 20px;
+}
+
+.link-index {
+    color: white;
+    text-decoration: underline #fa9483 2px;
+    font-size: 20px;
+}
+
+.link-index:hover {
+    color: #f3deca;
+}
+.vframe{
+    width: 100%;
+    height: 30vw;
+    border: 2px solid #4a2d57;
+    border-radius: 5px;
+    box-shadow: rgba(100,100,111,0.2)0px 7px 29px 0px;
+
+}
+.centered {
+    text-align: center;
+}
+
+#bgVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+
+
+.loc{
+    overflow: auto;
+    border-bottom: 3px #f3deca dashed;
+    margin-bottom: 15px;
+
+}
+.loc img{
+    height: 18vh;
+    width: 18vh;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.harta{
+   width: 100%; 
+   height: 40vh;
+   border-radius: 5px ;
+}
+a {
+    color: black;
+}
+a:hover {
+    color: #fa9483; 
+    text-decoration: underline; 
+}
+.row{
+    overflow: auto;
+
+}
+[class^="col-"]{
+    float: left;
+    padding: 0px 10px;
+}
+.col-50{
+    width: 50%; 
+}
+.col-33{
+    width: 33.3%;
+}
+.col-25{
+    width: 25%;
+}
+.contacte, .cform{
+    border: 2px solid #f3deca;
+    border-radius: 5px;
+    background-color: #f3deca5c;
+    padding: 5px 5%;
+    height: 325px;
+    margin-bottom: 15px;
+}
+.cform input, .cform textarea{
+    width: 100%;
+    font-size: 15px;
+    font-family: inherit;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+    
+
+}
+#hamburger{
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    right: 22px;
+    top: 24px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width:800px){
+
+    body{
+        font-size: 16px;
+    }
+    section{
+        padding: 90px 10px;
+    }
+    .index-info h1{
+        font-size:250% ;
+    }
+    .vframe {
+        height: 55vwS;
+    }
+
+[class^="col-"]{
+    width: 100%;
+}
+
+
+    navbar a{
+        display: none;
+    }
+    navbar.mobile a {
+        display: block;
+        text-align: center;
+        margin-top: 12px;
+    }
+
+    navbar{
+        display: block;
+    }
+    #hamburger{
+        display: block;
+    }
+}
